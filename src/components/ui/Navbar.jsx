@@ -37,7 +37,7 @@ export default function NavBar() {
           <div className="text-[#d2d2d2] flex items-center cursor-pointer">
             <BiSolidMovie size={35} />
             <a className="text-xl font-bold ml-2" href="#">
-              NATMOVIE
+              ESNATMOVIE
             </a>
           </div>
           <button
@@ -65,7 +65,7 @@ export default function NavBar() {
                 <li className="nav-item" key={item.id}>
                   <Link
                     className="px-3 py-2 text-[#b4b4b4] hover:text-[#f8f8f8] font-semibold duration-300"
-                    to={`/${item.id}`} // Establece la ruta correspondiente
+                    to={'/admin/${item.id}'}
                   >
                     {item.label}
                   </Link>
